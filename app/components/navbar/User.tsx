@@ -1,16 +1,13 @@
+import useRegisterModal from "`@/app/hooks/useRegisterModal`";
 import Button from "../Button";
 import { useState } from "react";
 
 const User = () => {
-  const [userLoggedIn, setuserLoggedIn] = useState(false);
-
-  const isLoggedIn = () => {
-    setuserLoggedIn(!userLoggedIn);
-  }
+  const registerModal = useRegisterModal();
 
   return ( 
     <main>
-      <Button onClick={isLoggedIn} label="Login" />
+      <Button onClick={registerModal.onOpen} label="Login" />
     </main>
    );
 }
