@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import {HiOutlineMenu} from 'react-icons/hi';
-import User from './User';
+
 
 const Search = () => {
   return ( 
@@ -21,9 +21,6 @@ const Search = () => {
         <div className="text-sm hidden sm:block">Home</div>
         <div className="text-sm hidden sm:block">Search Car</div>
         <div className="text-sm hidden sm:block">Add Car</div>
-        <div className="hidden sm:block">
-          <User />
-        </div>
         <div className='md:hidden'>
           <HiOutlineMenu />
         </div>
